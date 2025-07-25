@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  This file imports Tailwind's layers and defines any global
+  styles for the application. Feel free to add your own
+  custom classes or overrides below. Tailwind's dark mode
+  toggles via the `dark` class on the html element.
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100;
+}
+
+/* Smooth transitions between dark and light themes */
+body, html {
+  transition: background-color 0.3s, color 0.3s;
+}
